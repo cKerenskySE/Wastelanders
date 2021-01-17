@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  <!-- If the target is compromised, begin a countdown -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-Remove-Wastelander-If-Compromised-Coutdown</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Action]
+			[ManuallyActivateTrigger:true]
+			[ManuallyActivatedTriggerNames:Action-Remove-Wastelander-If-Compromised-Coutdown]
+			</Description>
+        </EntityComponent>
+	<!-- Remove once the countdown ends	 -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-Remove-Wastelander-If-Compromised-Coutdown</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Action]
+			[ForceDespawn:true]
+			</Description>
+        </EntityComponent>
+	<!-- Create Player Area -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-Create-Player-Known-Area</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[CreateKnownPlayerArea:true]
+			[KnownPlayerAreaRadius:1000]
+			[KnownPlayerAreaTimer:120]
+			[KnownPlayerAreaMaxSpawns:5]
+			[Retreat:true]
+			[UseChatBroadcast:true]
+			[ChatData:ChatProfile-Scout-Found]
+			</Description>
+        </EntityComponent>
+		<!-- Spawn Zones -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-Create-ScoutDrone</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[UseChatBroadcast:true]
+			[ChatData:ChatProfile-Refinery-Intruders]
+			[SpawnEncounter:true]
+			[Spawner:Spawn-Scout-Drone]
+			
+			</Description>
+        </EntityComponent>
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,15 @@
+﻿<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+	
+		<EntityComponent xsi:type="MyObjectBuilder_ModStorageComponentDefinition">
+			<Id>
+				<TypeId>ModStorageComponent</TypeId>
+				<SubtypeId>CoreResourceExtractor</SubtypeId>
+			</Id>
+			<RegisteredStorageGuids>
+				<guid>6417360e-6f78-4f53-b5c2-a1d5a79a7c2a</guid>
+			</RegisteredStorageGuids>
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>
+

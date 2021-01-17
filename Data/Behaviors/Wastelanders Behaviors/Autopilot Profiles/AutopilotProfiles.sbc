@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+	<!-- T0 Profiles -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>Action-Scav</SubtypeId>
+			</Id>
+			<Description>
+			[RivalAI Autopilot]      		
+			[UseVelocityCollisionEvasion:true]
+			[StrikeEngageUseCollisionEvasion:true]
+			[StrikeEngageUseSafePlanetPathing:true]
+			[RotationMultiplier:0.5]
+			
+			</Description>
+		</EntityComponent>
+	<!-- T1 Profiles -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>Action-Ramshackle-Technical</SubtypeId>
+			</Id>
+			<Description>
+			[RivalAI Autopilot]      		
+			[IdealPlanetAltitude:75]
+			[AltitudeTolerance:250]
+			[UseVelocityCollisionEvasion:true]
+			[CollisionEvasionResumeDistance:120]
+			[UseProjectileLeadPrediction:true]
+			[LevelWithGravityWhenIdle:true]
+			[StrikeEngageUseSafePlanetPathing:true]
+			[RotationMultiplier:0.5]
+			</Description>
+		</EntityComponent>
+	<!-- T2 Profiles -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>Action-Scout</SubtypeId>
+			</Id>
+			<Description>
+			[RivalAI Autopilot]      		
+
+			[UseVelocityCollisionEvasion:true]
+			[StrikeEngageUseSafePlanetPathing:true]
+			</Description>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>Action-Raider</SubtypeId>
+			</Id>
+			<Description>
+			[RivalAI Autopilot]      		
+
+			[UseVelocityCollisionEvasion:true]
+			[StrikeEngageUseCollisionEvasion:true]
+			[RotationMultiplier:0.5]
+
+			</Description>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>Action-Chariot</SubtypeId>
+			</Id>
+			<Description>
+			[RivalAI Autopilot]      		
+			[IdealPlanetAltitude:150]
+			[AltitudeTolerance:250]
+			[IdealMaxSpeed:40]
+			[IdealMinSpeed:20]
+			[RotationMultiplier:0.5]
+
+			</Description>
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

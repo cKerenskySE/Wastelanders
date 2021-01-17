@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+	<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	  <EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			<TypeId>Inventory</TypeId>
+			<SubtypeId>ChatProfile-CAS-Found</SubtypeId>
+		  </Id>
+		  <Description>
+
+			[RivalAI Chat]
+
+			[UseChat:true]
+			[StartsReady:true]
+			[MaxChats:1]
+			[BroadcastRandomly:false]
+			[Author:{AntennaName}]
+			[Color:Blue]
+
+			[ChatMessages:Target spotted. Moving in.]
+			[ChatAudio:ArcHudGPSNotification2]
+			[BroadcastChatType:Chat]
+
+		  </Description>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			<TypeId>Inventory</TypeId>
+			<SubtypeId>ChatProfile-CAS-Lost-Target</SubtypeId>
+		  </Id>
+		  <Description>
+
+			[RivalAI Chat]
+
+			[UseChat:true]
+			[StartsReady:true]
+			[MaxChats:1]
+			[BroadcastRandomly:true]
+			[Author:{AntennaName}]
+			[Color:Blue]
+
+			[ChatMessages:Target lost, attempting to re-engage.]
+			[ChatAudio:ArcHudGPSNotification2]
+			[BroadcastChatType:Chat]
+
+		  </Description>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			<TypeId>Inventory</TypeId>
+			<SubtypeId>ChatProfile-CAS-Lost-Target-NoTarget</SubtypeId>
+		  </Id>
+		  <Description>
+
+			[RivalAI Chat]
+
+			[UseChat:true]
+			[StartsReady:true]
+			[MaxChats:1]
+			[BroadcastRandomly:false]
+			[Author:{AntennaName}]
+			[Color:Blue]
+
+			[ChatMessages:Target got away]
+			[ChatAudio:ArcHudGPSNotification2]
+			[BroadcastChatType:Chat]
+
+		  </Description>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			<TypeId>Inventory</TypeId>
+			<SubtypeId>ChatProfile-CAS-Engage-Target</SubtypeId>
+		  </Id>
+		  <Description>
+
+			[RivalAI Chat]
+
+			[UseChat:true]
+			[StartsReady:true]
+			[MaxChats:1]
+			[BroadcastRandomly:true]
+			[Author:{AntennaName}]
+			[Color:Blue]
+
+			[ChatMessages:Engaging.]
+			[ChatAudio:ArcHudGPSNotification2]
+			[BroadcastChatType:Chat]
+
+		  </Description>
+		</EntityComponent>
+	  </EntityComponents>
+</Definitions>

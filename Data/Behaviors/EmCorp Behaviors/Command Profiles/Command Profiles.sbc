@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			  <TypeId>Inventory</TypeId>
+			  <SubtypeId>EmCorp-Command-Resupply</SubtypeId>
+		  </Id>
+		  <Description>
+
+			  [RivalAI Command]
+			  [CommandCode:ResupplyMe]
+			  [SingleRecipient:false]
+			  [SendWaypoint:true]
+			  [Waypoint:Waypoint-Resupply]
+		  </Description>
+		  
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			  <TypeId>Inventory</TypeId>
+			  <SubtypeId>Command-EMBuildBase</SubtypeId>
+		  </Id>
+		  <Description>
+
+			  [RivalAI Command]
+			  [CommandCode:BuildMe]
+			  [SingleRecipient:false]
+			  [SendWaypoint:true]
+			  [Waypoint:Waypoint-Resupply]
+		  </Description>
+		  
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			  <TypeId>Inventory</TypeId>
+			  <SubtypeId>Command-Build-Small</SubtypeId>
+		  </Id>
+		  <Description>
+
+			  [RivalAI Command]
+			  [CommandCode:Build-Small]
+			  [SingleRecipient:false]
+			  
+		  </Description>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			  <TypeId>Inventory</TypeId>
+			  <SubtypeId>Command-Build-Large</SubtypeId>
+		  </Id>
+		  <Description>
+
+			  [RivalAI Command]
+			  [CommandCode:Build-Large]
+			  [SingleRecipient:false]
+			  
+		  </Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			  <TypeId>Inventory</TypeId>
+			  <SubtypeId>Command-FindOutpost</SubtypeId>
+		  </Id>
+		  <Description>
+
+			  [RivalAI Command]
+			  [CommandCode:FoundOutpost]
+			  [SingleRecipient:false]
+			  [SendWaypoint:true]
+			  [Waypoint:Waypoint-BaseLocation]
+		  </Description>
+		  
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

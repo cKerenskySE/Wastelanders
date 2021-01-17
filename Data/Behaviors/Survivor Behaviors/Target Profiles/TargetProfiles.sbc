@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+	<!-- T0 Profiles -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Target-SurvivorRecovery</SubtypeId>
+      </Id>
+      <Description>
+	  [RivalAI Target]
+      [UseCustomTargeting:true]
+	  [TimeUntilNextRefresh:30]
+	  [TimeUntilNextEvaluation:10]
+      [Target:Grid]
+      [MaxDistance:4500]
+	  [MatchAllFilters:OutsideOfSafezone]
+      [MatchAllFilters:Relation]
+	  [MatchAllFilters:Broadcasting]
+	  [NonBroadcastVisualRange:2500]
+      [GetTargetBy:ClosestDistance]
+	  [Relations:Enemy]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Target-CAS</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Target]
+      [UseCustomTargeting:true]
+	  [TimeUntilNextRefresh:30]
+	  [TimeUntilNextEvaluation:10]
+      [Target:Grid]
+      [MaxDistance:4500]
+	  [MatchAllFilters:OutsideOfSafezone]
+      [MatchAllFilters:Relation]
+	  [MatchAllFilters:Broadcasting]
+	  [NonBroadcastVisualRange:2500]
+      [GetTargetBy:ClosestDistance]
+	  [Relations:Enemy]
+      </Description>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

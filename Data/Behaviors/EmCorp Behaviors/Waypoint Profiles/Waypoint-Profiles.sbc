@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Waypoint-Resupply</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Waypoint]
+      [Waypoint:RelativeOffset]
+      [RelativeEntity:Target]
+	  [Offset:{X:25 Y:25 Z:25}]
+      [InheritRelativeAltitude:false]
+      
+      </Description>
+      
+    </EntityComponent>
+	
+	 <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Waypoint-BaseLocation</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Waypoint]
+      
+      [Waypoint:RelativeOffset]
+      [RelativeEntity:Self]
+	  [Offset:{X:50 Y:50 Z:50}]
+
+      [InheritRelativeAltitude:false]
+      
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

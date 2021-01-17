@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  <!-- Corporate Transporter Request -->
+  		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-Create-Transporter-Help</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:Damage]
+			[DamageTypes:Any]
+			[Actions:Action-Create-Defense-Drone]
+			[MinCooldownMs:60000]
+			[MaxCooldownMs:120000]
+
+			</Description>
+        </EntityComponent>
+		<!-- Resupply Drone logic -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-FoundTargetForResupply</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:AcquiredTarget]
+			[Actions:Action-Resupply-Corp]
+			[MinCooldownMs:60000]
+			[MaxCooldownMs:120000]
+
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-GetResupplyCommands</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:CommandReceived]
+			[CommandReceiveCode:ResupplyMe]
+			[Actions:Action-Resupply-Response]
+			[MinCooldownMs:6000]
+			[MaxCooldownMs:360000]
+
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-LeavingWaypointTryBuild</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:false]
+			[Type:BehaviorTriggerB]
+			[Actions:Action-Build-Command-Small]
+			[MinCooldownMs:6000]
+			[MaxCooldownMs:360000]
+
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-LeavingWaypointTryBuild-Large</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:false]
+			[Type:BehaviorTriggerB]
+			[Actions:Action-Build-Command-Large]
+			[MinCooldownMs:6000]
+			[MaxCooldownMs:360000]
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-GetBuildCommand</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:CommandReceived]
+			[CommandReceiveCode:BuildMe]
+			[Actions:Action-Build-Response]
+			[MinCooldownMs:6000]
+			[MaxCooldownMs:360000]
+
+			</Description>
+        </EntityComponent>
+		<!-- BaseBuilding -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-EMBuildBase</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:AcquiredTarget]
+			[Actions:Action-EMBuildBase]
+			[MinCooldownMs:60000]
+			[MaxCooldownMs:120000]
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-BuildSmall</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:CommandReceived]
+			[CommandReceiveCode:Build-Small]
+			[Actions:Action-EMBuild-Base-Final]
+			[MinCooldownMs:6000]
+			[MaxCooldownMs:360000]
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-BuildLarge</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:CommandReceived]
+			[CommandReceiveCode:Build-Large]
+			[Actions:Action-EMBuild-Base-Final-Large]
+			[MinCooldownMs:6000]
+			[MaxCooldownMs:360000]
+			</Description>
+        </EntityComponent>
+		<!-- Ore Defense -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-Create-Ore-Help-On-Damage</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:Damage]
+			[DamageTypes:Any]
+			[Actions:Action-Create-Defense-Drones]
+			[MinCooldownMs:60000]
+			[MaxCooldownMs:120000]
+
+			</Description>
+        </EntityComponent>
+				<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-Create-Ore-Help</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:Damage]
+			[DamageTypes:Any]
+			[Actions:Action-Damage-Attacker]
+			[Actions:Action-Create-Defense-Drones]
+
+			</Description>
+        </EntityComponent>
+		<!-- Set-up an outpost here -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-Create-OutpostArea</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:CommandReceived]
+			[CommandReceiveCode:FoundOutpost]
+			[Actions:Action-Create-OutpostArea]
+			[MaxActions:1]
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-TrySpawnOutpost</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:BehaviorTriggerA]
+			[Actions:Action-Spawn-TrySpawnOutpost]
+			[MaxActions:1]
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-FindOutpost</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:Timer]
+			[MinCooldownMs:2000]
+			[MaxCooldownMs:2001]
+			[Actions:Action-FindOutpost]
+			[MaxActions:1]
+			</Description>
+        </EntityComponent>
+  </EntityComponents>
+</Definitions>

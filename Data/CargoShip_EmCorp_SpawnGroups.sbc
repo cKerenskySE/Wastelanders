@@ -1,0 +1,891 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SpawnGroups>
+	<!-- T0 Challenges -->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>CorporateMiteDrone</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:EMCORP]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:15]
+			[SpawnRandomCargo:true]
+			[AssignContainerTypesToAllCargo:Neutral Loot,Neutral Parts,Neutral Ore]
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:5000]
+			[SkipAirDensityCheck:true]
+			
+			[UseRetreatTimer:true]
+			[RetreatTimerTrigger:180000]
+			
+			[UseNoTargetTimer:true]
+			[NoTargetTimerTrigger:3600]
+			[RetreatDespawnDistance:100]
+			
+			[UseRivalAi:true]
+			[RivalAiSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			[SpawnRandomCargo:true]
+			[DisableDampeners:false]
+
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-Armor-HeavyToLight,MES-ProprietaryCompRichBlocks]
+			[NpcAtmoThrustForceMultiply:20]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>15.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-MiteDrone">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>45</Speed>
+					<Behaviour>MiteDroneBehavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+			<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>CorporateHydrogenRefuelDrone</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:EMCORP]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:4]
+			
+			[UseRandomNameGenerator:false]
+			
+			[ThreatIncludeOtherNpcOwners7:true]
+			[ThreatLevelCheckRange:5000]
+			[SkipAirDensityCheck:true]
+			
+			[UseRivalAi:true]
+			[RivalAiSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			[SpawnRandomCargo:true]
+			[DisableDampeners:false]
+
+			[UseRetreatTimer:true]
+			[RetreatTimerTrigger:180000]
+			
+			[UseNoTargetTimer:true]
+			[NoTargetTimerTrigger:3600]
+			[RetreatDespawnDistance:100]
+
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-ProprietaryCompRichBlocks]
+			[NpcAtmoThrustForceMultiply:20]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			[ChangeTurretSettings:true]
+			[TurretTargetNeutrals:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>2.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC Corporate Hydrogen Refuel Drone">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>75</Speed>
+					<Behaviour>HydrogenRefuelDronePassive</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>CorporateTransporter</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:EMCORP]
+			[PlanetRequiresAtmo:true]
+	
+			[SkipAirDensityCheck:true]
+			
+			[UseRetreatTimer:true]
+			[RetreatTimerTrigger:180000]
+			
+			[UseNoTargetTimer:true]
+			[NoTargetTimerTrigger:3600]
+			[RetreatDespawnDistance:100]
+			
+			[UseRandomNameGenerator:true]
+			[ReplaceAntennaNameWithRandomizedName:Antenna]
+			[RandomGridNamePattern:(NPC-EMCORP) Wasteland JobNoun BirdNoun Transport RandomNumber]
+			
+			[UseRivalAi:true]
+			[RivalAiSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			[SpawnRandomCargo:true]
+			[DisableDampeners:false]
+
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-ProprietaryCompRichBlocks]
+			[NpcAtmoThrustForceMultiply:20]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<Frequency>2.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Corporate Transporter">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>45</Speed>
+					<Behaviour>CorporateTransporterBehavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>CorporateCargoTransfer</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:EMCORP]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:15]
+			[SpawnRandomCargo:true]
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[SkipAirDensityCheck:true]
+			
+			[UseRetreatTimer:true]
+			[RetreatTimerTrigger:180000]
+			
+			[UseNoTargetTimer:true]
+			[NoTargetTimerTrigger:3600]
+			[RetreatDespawnDistance:100]
+			
+	
+			[UseRivalAi:true]
+			[RivalAiSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			[SpawnRandomCargo:true]
+			[AssignContainerTypesToAllCargo:CargoLargeTrade1A,CargoLargeMining1C,CargoLargeMining1B,CargoLargeMining1A]
+			[DisableDampeners:false]
+
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-Armor-HeavyToLight,MES-ProprietaryCompRichBlocks]
+			[NpcAtmoThrustForceMultiply:20]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			[ChangeTurretSettings:true]
+			[TurretTargetNeutrals:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>2.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Ramshackle Company Drone Transporter">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>45</Speed>
+					<Behaviour>CorporateTransporterBehavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<!-- T1 Challenges -->
+	<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>CorporateRamshackleDroneGatResponse</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:EMCORP]
+			[PlanetRequiresAtmo:true]
+			
+			[UseRandomNameGenerator:false]
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[SkipAirDensityCheck:true]
+			
+			[UseRetreatTimer:true]
+		[RetreatTimerTrigger:180000]
+		
+		[UseNoTargetTimer:true]
+		[NoTargetTimerTrigger:3600]
+		[RetreatDespawnDistance:100]
+			
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Ion,MES-NpcThrusters-Hydro,MES-Armor-HeavyToLight,MES-ProprietaryCompRichBlocks]
+			[NpcIonThrustForceMultiply:10]
+			[NpcIonThrustPowerMultiply:0.00001]
+			[NpcAtmoThrustForceMultiply:10]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>0.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Ramshackle Company Drone">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>45</Speed>
+					<Behaviour>RamshackleCorporateDrone</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>CorporateRamshackleDroneGat</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:EMCORP]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:15]
+			
+			[UseRandomNameGenerator:false]
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[SkipAirDensityCheck:true]
+			
+			[UseRetreatTimer:true]
+		[RetreatTimerTrigger:180000]
+		
+		[UseNoTargetTimer:true]
+		[NoTargetTimerTrigger:3600]
+		[RetreatDespawnDistance:100]
+			
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-Armor-HeavyToLight,MES-ProprietaryCompRichBlocks]
+			[NpcAtmoThrustForceMultiply:10]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>2.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Ramshackle Company Drone">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>45</Speed>
+					<Behaviour>RamshackleCorporateDrone</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>CorporateRamshackleDroneMisl</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:EMCORP]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:75]
+			
+			[UseRandomNameGenerator:false]
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[SkipAirDensityCheck:true]
+			
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[UseRetreatTimer:true]
+		[RetreatTimerTrigger:180000]
+		
+		[UseNoTargetTimer:true]
+		[NoTargetTimerTrigger:3600]
+		[RetreatDespawnDistance:100]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-Armor-HeavyToLight,MES-ProprietaryCompRichBlocks,MES-Gun-GatlingToMissile]
+			[NpcAtmoThrustForceMultiply:10]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>2.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Ramshackle Company Drone">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>45</Speed>
+					<Behaviour>RamshackleCorporateDrone</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<!-- T2 Challenges -->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>CorporateMosquitoDrone</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:EMCORP]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:175]
+			
+			[UseRandomNameGenerator:false]
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[SkipAirDensityCheck:true]
+			
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[UseRetreatTimer:true]
+		[RetreatTimerTrigger:180000]
+		
+		[UseNoTargetTimer:true]
+		[NoTargetTimerTrigger:3600]
+		[RetreatDespawnDistance:100]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-ProprietaryCompRichBlocks]
+			[NpcAtmoThrustForceMultiply:10]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>2.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Corporate Mosquito Hunter">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>45</Speed>
+					<Behaviour>MosquitoHunter</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>CorporateMeganeuraDrone</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:EMCORP]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:250]
+			
+			[UseRandomNameGenerator:false]
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[SkipAirDensityCheck:true]
+			
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[UseRetreatTimer:true]
+		[RetreatTimerTrigger:180000]
+		
+		[UseNoTargetTimer:true]
+		[NoTargetTimerTrigger:3600]
+		[RetreatDespawnDistance:100]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-ProprietaryCompRichBlocks]
+			[NpcAtmoThrustForceMultiply:10]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>2.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Corporate Meganeura Drone">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>45</Speed>
+					<Behaviour>MosquitoHunter</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>	
+<!-- T3 Challenges		 -->
+	<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>CorporateAssaultDrone</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:EMCORP]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:250]
+			
+			[UseRandomNameGenerator:false]
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:1000]
+			[SkipAirDensityCheck:true]
+			
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[UseRetreatTimer:true]
+		[RetreatTimerTrigger:180000]
+		
+		[UseNoTargetTimer:true]
+		[NoTargetTimerTrigger:3600]
+		[RetreatDespawnDistance:100]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Ion,MES-NpcThrusters-Hydro,MES-ProprietaryCompRichBlocks]
+			[NpcIonThrustForceMultiply:10]
+			[NpcIonThrustPowerMultiply:0.00001]
+			[NpcAtmoThrustForceMultiply:25]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			[ChangeTurretSettings:true]
+			[TurretTargetNeutrals:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>0.5</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Ramshackle Company Assault Drone">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>45</Speed>
+					<Behaviour>AssaultDrone</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>	
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>CorporateRevivifierEncounter</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:EMCORP]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:450]
+			
+			[UseRandomNameGenerator:false]
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[SkipAirDensityCheck:true]
+			
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			[SpawnRandomCargo:true]
+			[AssignContainerTypesToAllCargo:CargoLargeTrade1A,CargoLargeMining1C,CargoLargeMining1B,CargoLargeMining1A]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Ion,MES-NpcThrusters-Hydro,MES-ProprietaryCompRichBlocks]
+			[NpcIonThrustForceMultiply:10]
+			[NpcIonThrustPowerMultiply:0.00001]
+			[NpcAtmoThrustForceMultiply:25]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			
+			[UseRetreatTimer:true]
+		[RetreatTimerTrigger:180000]
+		
+		[UseNoTargetTimer:true]
+		[NoTargetTimerTrigger:3600]
+		[RetreatDespawnDistance:100]
+			
+			[ChangeTurretSettings:true]
+			[TurretTargetNeutrals:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>0.5</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Revivifier">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>45</Speed>
+					<Behaviour>RevivifierBehavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>	
+		<!-- NPC-Construction Drone -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>CorporateOutpostConstructionDrone</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:EMCORP]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:false]
+			[ThreatScoreMinimum:150]
+			
+			[UseRandomNameGenerator:false]
+			
+			[SpawnRandomCargo:true]
+			[AssignContainerTypesToAllCargo:CargoLargeTrade1A,CargoLargeMining1C,CargoLargeMining1B,CargoLargeMining1A]
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[SkipAirDensityCheck:true]
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Ion,MES-NpcThrusters-Hydro,MES-ProprietaryCompRichBlocks]
+			[NpcAtmoThrustForceMultiply:25]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcIonThrustForceMultiply:25]
+			[NpcIonThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			
+			[UseRetreatTimer:true]
+			[RetreatTimerTrigger:180000]
+			
+			[UseNoTargetTimer:true]
+			[NoTargetTimerTrigger:36000]
+			[RetreatDespawnDistance:100]
+			
+			[ChangeTurretSettings:true]
+			[TurretTargetNeutrals:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>0.5</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-EMCORP) Pioneer Outpost Contruction Drone">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>45</Speed>
+					<Behaviour>CorporateBigBuilderBehavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>	
+		
+<!-- Facilities		 -->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>LeisureStation</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Small]
+			[FactionOwner:EMCORP]
+			[ReplenishSystems:true]		
+			[ForceStaticGrid:true]
+			[PlanetRequiresAtmo:true]
+			[PlanetRequiresOxygen:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>10</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC) Leisure Station">
+					<Position>
+						<X>0.0</X>
+						<Y>0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>75</Speed>
+					<Behaviour>Passive</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>CorporateDeepOre</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Small]
+			[FactionOwner:EMCORP]
+			[ReplenishSystems:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[RemoveVoxelsIfGridRemoved:true]
+			[ForceStaticGrid:true]
+			[SpawnRandomCargo:false]
+			[PlanetRequiresAtmo:true]
+			[PlanetRequiresOxygen:true]
+			[ChangeTurretSettings:true]
+			[TurretTargetNeutrals:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>0.5</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Corporate Core Drill">
+					<Position>
+						<X>0.0</X>
+						<Y>5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>75</Speed>
+					<Behaviour>OreExtractorDefense</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>CorporateSupplyDepot</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Small]
+			[FactionOwner:EMCORP]
+			[ReplenishSystems:true]
+			[SpawnRandomCargo:true]
+			[AssignContainerTypesToAllCargo:CargoLargeMilitary1A,CargoLargeMilitary3A,CargoLargeMining1A,CargoLargeMining1B]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[RemoveVoxelsIfGridRemoved:true]
+			[ForceStaticGrid:true]
+			[PlanetRequiresAtmo:true]
+			[PlanetRequiresOxygen:true]
+			[IgnoreGlobalBlockReplacer:true]
+			[ChangeTurretSettings:true]
+			[TurretTargetNeutrals:true]
+
+			
+			[UseNoTargetTimer:true]
+			[NoTargetTimerTrigger:3600]
+			[RetreatDespawnDistance:100]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>2.5</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Corporate Supply Depot">
+					<Position>
+						<X>0.0</X>
+						<Y>1.75</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>75</Speed>
+					<Behaviour>EMCorpResupplyDepot</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+	
+	<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>EmCorpOilDerrick</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[FactionOwner:EMCORP]
+			[PlanetaryInstallationType:Medium]
+			[ReplenishSystems:true]
+			[RemoveVoxelsIfGridRemoved:true]
+			[AssignContainerTypesToAllCargo:CargoLargeMining1A,CargoLargeMining1B]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ForceStaticGrid:true]
+			[SpawnRandomCargo:true]
+			[PlanetRequiresAtmo:true]
+			[PlanetRequiresOxygen:true]
+			[UseBlockReplacerProfile:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>1.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC) Oil Derrick">
+					<Position>
+						<X>0.0</X>
+						<Y>19.5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>EMCorpResupplyDepot</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>EmCorpPrefabBase</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[FactionOwner:EMCORP]
+			[PlanetaryInstallationType:Small]
+			[ReplenishSystems:true]
+			[AssignContainerTypesToAllCargo:CargoLargeMining1A,CargoLargeMining1B]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ForceStaticGrid:true]
+			[SpawnRandomCargo:true]
+			[PlanetRequiresAtmo:true]
+			[PlanetRequiresOxygen:true]
+			[UseBlockReplacerProfile:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>1.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="Prefab Base Beacon Phase I">
+					<Position>
+						<X>0.0</X>
+						<Y>-5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>EMCorpPrefabBaseBuild</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+	</SpawnGroups>
+</Definitions>

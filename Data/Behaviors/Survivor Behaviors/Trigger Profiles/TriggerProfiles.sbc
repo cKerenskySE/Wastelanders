@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-CAS-A</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:BehaviorTriggerA]
+			[Actions:Action-CAS-Pilot-Target]
+
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-CAS-B</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:BehaviorTriggerB]
+			[Actions:Action-CAS-Pilot-Lost-Target]
+
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-CAS-C</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:BehaviorTriggerC]
+			[Actions:Action-CAS-Pilot-Lost-NoTarget]
+
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-CAS-D</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:BehaviorTriggerD]
+			[Actions:Action-CAS-Pilot-Engage-Target]
+
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-CAS-F</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[MinCooldownMs:15000]
+			[MaxCooldownMs:25000]
+			[Type:BehaviorTriggerD]
+			[Actions:Action-CAS-Pilot-Barrel-Roll]
+
+			</Description>
+        </EntityComponent>
+		
+  </EntityComponents>
+</Definitions>

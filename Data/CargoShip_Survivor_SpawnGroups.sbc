@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SpawnGroups>
+	<!-- T0 Challenges -->
+			<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>SurvivorRecoveryVehicle</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:SURVIVOR]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:4]
+			[ThreatIncludeOtherNpcOwners:true]
+			[UseRandomNameGenerator:true]
+			[ReplaceAntennaNameWithRandomizedName:Antenna]
+			[RandomGridNamePattern:NPC-Captain SurnamesNoun]
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[SkipAirDensityCheck:true]
+			
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[UseRetreatTimer:true]
+			[RetreatTimerTrigger:180000]
+			
+			[UseNoTargetTimer:true]
+			[NoTargetTimerTrigger:3600]
+			[RetreatDespawnDistance:100]
+				
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-Armor-HeavyToLight,MES-ProprietaryCompRichBlocks]
+			[NpcAtmoThrustForceMultiply:10]
+			[NpcHydroThrustPowerMultiply:10]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>1.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(SURVIVORS-NPC)-Recovery Vehicle">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>75</Speed>
+					<Behaviour>SurvivorRecoveryBehavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+			<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>SurvivorCASTransport</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:SURVIVOR]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:4]
+			[ThreatIncludeOtherNpcOwners:true]
+			[UseRandomNameGenerator:true]
+			[ReplaceAntennaNameWithRandomizedName:Antenna]
+			[RandomGridNamePattern:NPC-Captain SurnamesNoun]
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[SkipAirDensityCheck:true]
+			
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[UseRetreatTimer:true]
+			[RetreatTimerTrigger:180000]
+			
+			[UseNoTargetTimer:true]
+			[NoTargetTimerTrigger:3600]
+			[RetreatDespawnDistance:100]
+				
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-Armor-HeavyToLight,MES-ProprietaryCompRichBlocks]
+			[NpcAtmoThrustForceMultiply:10]
+			[NpcHydroThrustPowerMultiply:10]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>1.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Heavy Combat Transport">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>75</Speed>
+					<Behaviour>SurvivorCASBehavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>SurvivorsCamp</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[FactionOwner:SURVIVOR]
+			[PlanetaryInstallationType:Medium]
+			[ReplenishSystems:true]
+			[RemoveVoxelsIfGridRemoved:true]
+			[AssignContainerTypesToAllCargo:CargoSmallMilitary1A,CargoSmallMilitary3A,CargoLargeMining1A,CargoLargeMining1B]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ForceStaticGrid:true]
+			[SpawnRandomCargo:true]
+			[PlanetRequiresAtmo:true]
+			[PlanetRequiresOxygen:true]
+			[UseBlockReplacerProfile:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>1.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-SURVIVORS) Survivors Camp">
+					<Position>
+						<X>0.0</X>
+						<Y>-2.5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>Survivor-Defense</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>SurvivorOilDerrick</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[FactionOwner:SURVIVOR]
+			[PlanetaryInstallationType:Medium]
+			[ReplenishSystems:true]
+			[RemoveVoxelsIfGridRemoved:true]
+			[AssignContainerTypesToAllCargo:CargoLargeMining1A,CargoLargeMining1B]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ForceStaticGrid:true]
+			[SpawnRandomCargo:true]
+			[PlanetRequiresAtmo:true]
+			[PlanetRequiresOxygen:true]
+			[UseBlockReplacerProfile:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>1.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC) Oil Derrick">
+					<Position>
+						<X>0.0</X>
+						<Y>19.5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>Survivor-Oil</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>SurvivorTradePost</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[FactionOwner:SURVIVOR]
+			[PlanetaryInstallationType:Small]
+			[InitializeStoreBlocks:true]
+			[ReplenishSystems:true]
+			[RemoveVoxelsIfGridRemoved:true]
+			[AssignContainerTypesToAllCargo:CargoSmallMilitary1A,CargoSmallMilitary3A,CargoLargeMining1A,CargoLargeMining1B]
+			[ContainerTypesForStoreOrders:LargeBlockSmallContainer]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ForceStaticGrid:true]
+			[SpawnRandomCargo:true]
+			[PlanetRequiresAtmo:true]
+			[PlanetRequiresOxygen:true]
+			[GridsAreEditable:false]
+			[RequireAllMods:2289675817,1596960203]
+			[IgnoreWeaponRandomizerMod:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-SURVIVORS) Trade Station">
+					<Position>
+						<X>0.0</X>
+						<Y>-4</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>Survivor-Oil</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>SurvivorContracts</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[FactionOwner:SURVIVOR]
+			[PlanetaryInstallationType:Small]
+			[InitializeStoreBlocks:true]
+			[ContainerTypesForStoreOrders:LargeBlockSmallContainer]
+			[ReplenishSystems:true]
+			[RemoveVoxelsIfGridRemoved:true]
+			[AssignContainerTypesToAllCargo:Neutral Loot,Neutral Parts,Neutral Ore]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ForceStaticGrid:true]
+			[SpawnRandomCargo:true]
+			[PlanetRequiresAtmo:true]
+			[PlanetRequiresOxygen:true]
+			[GridsAreEditable:false]
+			[RequireAllMods:2289675817,1596960203]
+			[IgnoreWeaponRandomizerMod:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-SURVIVORS) Bounties and Contracts">
+					<Position>
+						<X>0.0</X>
+						<Y>-2</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>Survivor-Oil</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+	</SpawnGroups>
+</Definitions>

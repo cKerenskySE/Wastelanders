@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+	<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	  <EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			<TypeId>Inventory</TypeId>
+			<SubtypeId>ChatProfile-Scout-Found</SubtypeId>
+		  </Id>
+		  <Description>
+
+			[RivalAI Chat]
+
+			[UseChat:true]
+			[StartsReady:true]
+			[MaxChats:1]
+			[BroadcastRandomly:false]
+			[Author:Wastelander Scout Drone]
+			[Color:Red]
+
+			[ChatMessages:Target Found. Marking for future Scav operations]
+			[ChatAudio:ArcHudGPSNotification2]
+			[BroadcastChatType:Chat]
+
+		  </Description>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			<SubtypeId>ChatProfile-Refinery-Intruders</SubtypeId>
+			<TypeId>Inventory</TypeId>
+		  </Id>
+		  <Description>
+
+			[RivalAI Chat]
+
+			[UseChat:true]
+			[StartsReady:true]
+			[MaxChats:1]
+			[BroadcastRandomly:false]
+			[Author:Automated Detection System]
+			[Color:Red]
+			[ChatMessages:Perimeter Alarms triggered. Requesting Scout!]
+			[ChatAudio:ArcHudGPSNotification2]
+			[BroadcastChatType:Chat]
+
+		  </Description>
+		</EntityComponent>
+	  </EntityComponents>
+</Definitions>

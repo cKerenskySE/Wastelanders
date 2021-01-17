@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  <!-- T0 Challenges -->
+   <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>WastelandScav</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Strike]
+		  [AutopilotData:Action-Scav]
+		  [WeaponMaxAngleFromTarget:10]
+		  [MaxStaticWeaponRange:550]
+		  [UseBarrageFire:true]
+		  [AmmoReplenishClipAmount:5]
+		  [MaxAmmoReplenishments:2]
+		  [UseNoTargetTimer:true]
+		  [NoTargetTimerTrigger:15000]
+		  [TargetData:Target-Scav]
+		  
+		  [StrikeBeginPlanetAttackRunDistance:1000]
+		  [StrikeBreakawayDistance:20]
+		  
+		  [StrikeOffsetRecalculationTime:20]
+		</Description>
+    </EntityComponent>
+  
+  <!-- T1 Challenges -->
+	 <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>WastelandRamshackleTechnical</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Strike]
+		  
+		  [AutopilotData:Action-Ramshackle-Technical]
+		  
+		  [WeaponMaxAngleFromTarget:2]
+		  [MaxStaticWeaponRange:650]
+		  [UseBarrageFire:true]
+		  [AmmoReplenishClipAmount:5]
+		  [MaxAmmoReplenishments:5]
+		  
+		  [UseNoTargetTimer:true]
+		  [NoTargetTimerTrigger:15000]
+		  [TargetData:Target-Ramshackle-Technical]
+		  
+		  [Triggers:Trigger-Remove-Wastelander-If-Compromised]
+		  
+		  [StrikeBeginPlanetAttackRunDistance:950]
+		  [StrikeBreakawayDistance:55]
+		  
+		</Description>
+    </EntityComponent>
+	
+		 <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>WastelandRamshackleTechnicalVeteran</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Strike]
+		  
+		  [AutopilotData:Action-Ramshackle-Technical]
+		  
+		  [WeaponMaxAngleFromTarget:5]
+		  [MaxStaticWeaponRange:450]
+		  [UseBarrageFire:true]
+		  [AmmoReplenishClipAmount:5]
+		  [MaxAmmoReplenishments:5]
+		  
+		  [UseNoTargetTimer:true]
+		  [NoTargetTimerTrigger:15000]
+		  [TargetData:Target-Ramshackle-Technical]
+		  
+		  [Triggers:Trigger-Remove-Wastelander-If-Compromised]
+		  [StrikeBeginPlanetAttackRunDistance:1500]
+		  [StrikeBreakawayDistance:100]
+		  
+		</Description>
+    </EntityComponent>
+   <!-- T2 Challenges -->
+   <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>Wasteland-Scout-Light-Behavior</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Fighter]
+		  [AutopilotData:Action-Scout]
+		  [FighterEngageDistancePlanet:25]
+		  [FighterDisengageDistanceSpace:250]
+		  
+		  [TargetData:Target-Scout]
+		  
+		  [Triggers:Trigger-Create-Player-Known-Area]
+		</Description>
+    </EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>Wasteland-Raider-Behavior</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Strike]
+		  [AutopilotData:Action-Raider]
+		  
+		  [WeaponMaxAngleFromTarget:35]
+		  [MaxStaticWeaponRange:250]
+		  [UseBarrageFire:true]
+		  [AmmoReplenishClipAmount:5]
+		  [MaxAmmoReplenishments:2]
+		  
+		  [UseNoTargetTimer:true]
+		  [NoTargetTimerTrigger:15000]
+		  [TargetData:Target-Raider]
+		  
+		  [Triggers:Trigger-Remove-Wastelander-If-Compromised]
+		</Description>
+    </EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>Wasteland-Chariot-Behavior</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:HorseFighter]
+		  [AutopilotData:Action-Chariot]
+		  [UseTurrets:true]
+		  [UseNoTargetTimer:true]
+		  [NoTargetTimerTrigger:15000]
+		  [TargetData:Target-Raider]
+		  
+		  [Triggers:Trigger-Remove-Wastelander-If-Compromised]
+		</Description>
+    </EntityComponent>
+	<!-- Rover logic -->
+		 <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Wasteland-BasicRover</SubtypeId>
+      </Id>
+      <Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Strike]
+		  [AllowStrafing:false]
+		  [UseBarrageFire:true]
+		  [UseAmmoReplenish:true]
+		  [FlyLevelWithGravity:true]
+		  [LevelWithGravityWhenIdle:true]
+		  [UseVelocityCollisionEvasion:false]
+		  [StrikeBeginPlanetAttackRunDistance:75]
+		  [StrikeBreakawayDistance:10]
+		  [StrikeEngageUseSafePlanetPathing:false]
+		  [IdealMaxSpeed:55]
+		  [IdealMinSpeed:25]
+		  [TargetData:Target-Scav]
+		  [UseCustomTargeting:true]
+		  [UseTurrets:true]
+      </Description>
+    </EntityComponent>
+	<!-- Wastelander Facility Defense -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>Wasteland-RefineryDefense</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Passive]
+		  
+		  [Triggers:Trigger-Create-Scout-Spawn]
+		</Description>
+    </EntityComponent>
+	   <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>Wasteland-Scout-Light-Behavior-Defense</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Fighter]
+		  [AutopilotData:Action-Scout]
+		  [FighterEngageDistancePlanet:25]
+		  [FighterDisengageDistanceSpace:250]
+		  
+		  [TargetData:Target-Scout-Defense]
+		  
+		  [Triggers:Trigger-Create-Player-Known-Area]
+		</Description>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

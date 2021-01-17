@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SpawnGroups>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>EMCorp-Quest-Dungeon-Cooling-Station</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[FactionOwner:EMCORP]
+			[PlanetaryInstallationType:Large]
+			[ReplenishSystems:true]
+			[RemoveVoxelsIfGridRemoved:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[IgnoreWeaponRandomizerMod:true]
+			[ForceStaticGrid:true]
+			[CutVoxelsAtAirtightCells:true]
+			[PlanetRequiresAtmo:true]
+			[PlanetRequiresOxygen:true]
+			[PlanetaryInstallationChance:5]
+			[InstallationSpawnsOnDryLand:true]
+			[ClearAuthorship:true]
+			[GridsAreEditable:false]
+			[IgnoreGlobalBlockReplacer:true]
+			[UseBlockReplacerProfile:true]
+			[ReplaceAntennaNameWithRandomizedName:Antenna]
+			[RandomGridNamePattern:(NPC-EMCORP) Cooling Station NatoLetter-RandomNumber]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>1</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-EMCORP)-Cooling Station">
+					<Position>
+						<X>0.0</X>
+						<Y>-53.5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>RAI-Passive</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+	</SpawnGroups>
+</Definitions>

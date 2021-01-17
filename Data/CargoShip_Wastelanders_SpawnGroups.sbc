@@ -1,0 +1,727 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SpawnGroups>
+	<!-- T0 Challenges -->
+		<SpawnGroup>
+		<Id>
+			<TypeId>SpawnGroupDefinition</TypeId>
+			<SubtypeId>WastelandScav</SubtypeId>
+		</Id>
+		<Description>
+		[Modular Encounters SpawnGroup]
+		[AtmosphericCargoShip:true]
+		[ReplenishSystems:true]
+		[FactionOwner:WASTELANDERS]
+		[PlanetRequiresAtmo:true]
+		[UseThreatLevelCheck:true]
+		[ThreatScoreMinimum:4]
+		[ThreatIncludeOtherNpcOwners:true]
+		[UseRandomNameGenerator:true]
+		[ReplaceAntennaNameWithRandomizedName:Antenna]
+		[RandomGridNamePattern:NeutralAdjective BaddieNoun Scavanger]
+		
+		
+		[ThreatIncludeOtherNpcOwners:true]
+		[ThreatLevelCheckRange:10000]
+		[SkipAirDensityCheck:true]
+		
+		[RivalAiSpawn:true]
+		[UseRivalAi:true]
+		[RivalAiAtmosphericSpawn:true]
+		[RivalAiReplaceRemoteControl:true]
+		
+		[UseRetreatTimer:true]
+		[RetreatTimerTrigger:180000]
+		
+		[UseNoTargetTimer:true]
+		[NoTargetTimerTrigger:3600]
+		[RetreatDespawnDistance:100]
+		
+		
+		[ConfigureSpecialNpcThrusters:true]
+		[UseBlockReplacerProfile:true]
+		[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-Armor-HeavyToLight,MES-ProprietaryCompRichBlocks]
+		[NpcAtmoThrustForceMultiply:10]
+		[NpcAtmoThrustPowerMultiply:0.00001]
+		[NpcHydroThrustPowerMultiply:0.00001]
+		
+		</Description>
+		<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+		<IsPirate>false</IsPirate>
+		<IsCargoShip>true</IsCargoShip>
+		<Frequency>2.0</Frequency>
+		<Prefabs>
+			<Prefab SubtypeId="NPC-Wastelander Scavanger">
+				<Position>
+					<X>0.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				</Position>
+				<Speed>75</Speed>
+				<Behaviour>WastelandScav</Behaviour>
+			</Prefab>
+		</Prefabs>
+	</SpawnGroup>
+	<!-- T1 Challenges -->
+			<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>WastelandTechnicalRookie</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:WASTELANDERS]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:20]
+			[ReduceBlockBuildStates:true]
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[SkipAirDensityCheck:true]
+			[ReplaceAntennaNameWithRandomizedName:Antenna]
+			[RandomGridNamePattern:Rookie Technical BaddieNoun]
+			
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[UseRetreatTimer:true]
+		[RetreatTimerTrigger:180000]
+		
+		[UseNoTargetTimer:true]
+		[NoTargetTimerTrigger:3600]
+		[RetreatDespawnDistance:100]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-Armor-HeavyToLight,MES-ProprietaryCompRichBlocks]
+			[NpcAtmoThrustForceMultiply:25]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>1.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Ramshackle Technical">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>75</Speed>
+					<Behaviour>WastelandRamshackleTechnical</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>WastelandTechnicalVeteran</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:WASTELANDERS]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:30]
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[UseRandomNameGenerator:true]
+			[ReplaceAntennaNameWithRandomizedName:Antenna]
+			[RandomGridNamePattern:BadAdjective BaddieNoun Technical]
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[SkipAirDensityCheck:true]
+			
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[UseRetreatTimer:true]
+		[RetreatTimerTrigger:180000]
+		
+		[UseNoTargetTimer:true]
+		[NoTargetTimerTrigger:3600]
+		[RetreatDespawnDistance:100]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[NpcAtmoThrustForceMultiply:25]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<Frequency>1.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Ramshackle Technical">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>75</Speed>
+					<Behaviour>WastelandRamshackleTechnicalVeteran</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+	<!-- T2 Challenges -->
+		
+		<!-- Scout Craft -->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>WastelandScout</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:WASTELANDERS]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:1]
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[SkipAirDensityCheck:true]
+			[ReplaceAntennaNameWithRandomizedName:Antenna]
+			[RandomGridNamePattern:BadAdjective Scout BaddieNoun]
+			
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[UseRetreatTimer:true]
+		[RetreatTimerTrigger:180000]
+		
+		[UseNoTargetTimer:true]
+		[NoTargetTimerTrigger:3600]
+		[RetreatDespawnDistance:100]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-Armor-HeavyToLight]
+			[NpcAtmoThrustForceMultiply:25]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>1.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Wastelander Scout UAV">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>75</Speed>
+					<Behaviour>Wasteland-Scout-Light-Behavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>WastelandScoutPlayer</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:WASTELANDERS]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:1]
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[SkipAirDensityCheck:true]
+			[ReplaceAntennaNameWithRandomizedName:Antenna]
+			[RandomGridNamePattern:BadAdjective Scout BaddieNoun]
+			
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[UseRetreatTimer:true]
+		[RetreatTimerTrigger:180000]
+		
+		[UseNoTargetTimer:true]
+		[NoTargetTimerTrigger:3600]
+		[RetreatDespawnDistance:100]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-Armor-HeavyToLight]
+			[NpcAtmoThrustForceMultiply:25]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>0.01</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Wastelander Scout UAV">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>75</Speed>
+					<Behaviour>Wasteland-Scout-Light-Behavior-Defense</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>WastelandRaider</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:WASTELANDERS]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:50]
+			[ThreatLevelCheckRange:10000]
+			[UseKnownPlayerLocations:true]
+
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[SkipAirDensityCheck:true]
+			[ReplaceAntennaNameWithRandomizedName:Antenna]
+			[RandomGridNamePattern:BadAdjective Raider BaddieNoun]
+			
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[UseRetreatTimer:true]
+		[RetreatTimerTrigger:180000]
+		
+		[UseNoTargetTimer:true]
+		[NoTargetTimerTrigger:3600]
+		[RetreatDespawnDistance:100]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-Armor-HeavyToLight]
+			[NpcAtmoThrustForceMultiply:25]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			[ChangeTurretSettings:true]
+			[TurretTargetNeutrals:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>1.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Ramshackle Raider">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>75</Speed>
+					<Behaviour>Wasteland-Raider-Behavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>WastelandChariot</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:WASTELANDERS]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:50]
+			[UseKnownPlayerLocations:false]
+
+			
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[SkipAirDensityCheck:true]
+			[ReplaceAntennaNameWithRandomizedName:Antenna]
+			[RandomGridNamePattern:BadAdjective Raider BaddieNoun]
+			
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			[UseRetreatTimer:true]
+		[RetreatTimerTrigger:180000]
+		
+		[UseNoTargetTimer:true]
+		[NoTargetTimerTrigger:3600]
+		[RetreatDespawnDistance:100]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-Armor-HeavyToLight]
+			[NpcAtmoThrustForceMultiply:25]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			[ChangeTurretSettings:true]
+			[TurretTargetNeutrals:true]
+			
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>1.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Ramshackle Chariot">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>75</Speed>
+					<Behaviour>Wasteland-Chariot-Behavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+				<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>WastelandTresspasser</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[AtmosphericCargoShip:true]
+			[ReplenishSystems:true]
+			[FactionOwner:WASTELANDERS]
+			[PlanetRequiresAtmo:true]
+			[UseThreatLevelCheck:true]
+			[ThreatScoreMinimum:450]
+			[UseKnownPlayerLocations:false]
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatLevelCheckRange:10000]
+			[SkipAirDensityCheck:true]
+			
+			[RivalAiSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiAtmosphericSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			[UseRetreatTimer:true]
+			[RetreatTimerTrigger:180000]
+			
+			[UseNoTargetTimer:true]
+			[NoTargetTimerTrigger:3600]
+			[RetreatDespawnDistance:100]
+			[ConfigureSpecialNpcThrusters:true]
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro,MES-Armor-HeavyToLight]
+			[NpcAtmoThrustForceMultiply:25]
+			[NpcAtmoThrustPowerMultiply:0.00001]
+			[NpcHydroThrustPowerMultiply:0.00001]
+			[ChangeTurretSettings:true]
+			[TurretTargetNeutrals:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>1.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC)-Tresspasser">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>75</Speed>
+					<Behaviour>Wasteland-Chariot-Behavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+	<!-- Wastelander Facilities -->
+	
+	<!-- Small -->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>WastelandRepairStation</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[FactionOwner:WASTELANDERS]
+			[PlanetaryInstallationType:Small]
+			[ReplenishSystems:true]
+			[RivalAiAtmosphericSpawn:false]
+			[RemoveVoxelsIfGridRemoved:true]
+			[AssignContainerTypesToAllCargo:CargoLargeMining1A,CargoLargeMining1B]
+			[ForceStaticGrid:true]
+			[SpawnRandomCargo:true]
+			[PlanetRequiresAtmo:true]
+			[PlanetRequiresOxygen:true]
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:20000]
+			[ThreatScoreMinimum:50]
+			[ThreatIncludeOtherNpcOwners:true]
+			[UseBlockReplacerProfile:true]
+			
+			[ReplaceAntennaNameWithRandomizedName:Antenna]
+			[RandomGridNamePattern:NPC Captured Service Station NatoLetter-RandomNumber]
+			[ChangeTurretSettings:true]
+			[TurretTargetNeutrals:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Reclaimed Service Station">
+					<Position>
+						<X>0.0</X>
+						<Y>30</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>Passive</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>WastelandRefinery</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[FactionOwner:WASTELANDERS]
+			[PlanetaryInstallationType:Small]
+			[ReplenishSystems:true]
+			[RemoveVoxelsIfGridRemoved:true]
+			[ContainerTypeAssignmentReference:Small Cargo Container|HostileMid Ore]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ForceStaticGrid:true]
+			[SpawnRandomCargo:true]
+			[PlanetRequiresAtmo:true]
+			[PlanetRequiresOxygen:true]
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:20000]
+			[ThreatScoreMinimum:10]
+			[ThreatIncludeOtherNpcOwners:true]
+			[UseBlockReplacerProfile:true]
+			[ReplaceAntennaNameWithRandomizedName:Antenna]
+			[RandomGridNamePattern:NPC Captured Refinery Outpost NatoLetter-RandomNumber]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>15.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-Corporate Refinery Outpost">
+					<Position>
+						<X>0.0</X>
+						<Y>5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>Wasteland-RefineryDefense</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>WastelandPatrolRover</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[RivalAiSpawn:true]
+			[FactionOwner:WASTELANDERS]
+			[ReplenishSystems:true]
+			[RivalAiAtmosphericSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[PlanetRequiresAtmo:true]
+			[SkipAirDensityCheck:true]
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:5000]
+			[ThreatScoreMinimum:85]
+			[ThreatIncludeOtherNpcOwners:true]
+			[UseVelocityCollisionEvasion:true]
+			[ChangeTurretSettings:true]
+			[TurretTargetNeutrals:true]
+			[UseNoTargetTimer:true]
+			[NoTargetTimerTrigger:3600]
+			[RetreatDespawnDistance:100]
+
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Prefabs>
+				<Prefab SubtypeId="NPC-DroneDeployBay">
+					<Position>
+						<X>0.0</X>
+						<Y>5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>Wasteland-BasicRover</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>WastelandPatrolRover-Ranger</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[RivalAiSpawn:true]
+			[FactionOwner:WASTELANDERS]
+			[ReplenishSystems:true]
+			[RivalAiAtmosphericSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[PlanetRequiresAtmo:true]
+			[SkipAirDensityCheck:true]
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:5000]
+			[ThreatScoreMinimum:85]
+			[ThreatIncludeOtherNpcOwners:true]
+			[UseVelocityCollisionEvasion:true]
+			[ChangeTurretSettings:true]
+			[TurretTargetNeutrals:true]
+			[UseNoTargetTimer:true]
+			[NoTargetTimerTrigger:3600]
+			[RetreatDespawnDistance:100]
+
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Prefabs>
+				<Prefab SubtypeId="DroneDeployBay-Ranger">
+					<Position>
+						<X>0.0</X>
+						<Y>5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>Wasteland-BasicRover</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>WastelanderOilDerrick</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[FactionOwner:WASTELANDERS]
+			[PlanetaryInstallationType:Medium]
+			[ReplenishSystems:true]
+			[RemoveVoxelsIfGridRemoved:true]
+			[AssignContainerTypesToAllCargo:CargoSmallMilitary1A,CargoSmallMilitary3A,CargoLargeMining1A,CargoLargeMining1B]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ForceStaticGrid:true]
+			[SpawnRandomCargo:true]
+			[PlanetRequiresAtmo:true]
+			[PlanetRequiresOxygen:true]
+			[UseBlockReplacerProfile:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>1.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC) Oil Derrick">
+					<Position>
+						<X>0.0</X>
+						<Y>19.5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>Wastelanders-Oil</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>WastelanderCapturedBunker</SubtypeId>
+			</Id>
+			<Description>
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[CutVoxelsAtAirtightCells:true]
+			[FactionOwner:WASTELANDERS]
+			[PlanetaryInstallationType:Small]
+			[ContainerTypesForStoreOrders:LargeBlockSmallContainer]
+			[ReplenishSystems:true]
+			[AssignContainerTypesToAllCargo:CargoLargeMilitary1A,CargoLargeMilitary3A,CargoLargeMining1A,CargoLargeMining1B,CargoLargeTrade1A,CargoLargeTrade2A]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ForceStaticGrid:true]
+			[SpawnRandomCargo:true]
+			[PlanetRequiresAtmo:true]
+			[PlanetRequiresOxygen:true]
+			[RequireAllMods:2289675817,1596960203]
+			[IgnoreWeaponRandomizerMod:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<IsCargoShip>true</IsCargoShip>
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-Wastelanders) Captured Supply Bunker">
+					<Position>
+						<X>0.0</X>
+						<Y>-10</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>Wasteland-RefineryDefense</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+	</SpawnGroups>
+</Definitions>

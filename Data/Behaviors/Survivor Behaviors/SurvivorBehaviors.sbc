@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  <!-- T0 Challenges -->
+   <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>SurvivorRecoveryBehavior</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Horsefly]
+		  [AutopilotData:RAI-Generic-Autopilot-Horsefly]
+		  [TargetData:Target-SurvivorRecovery]
+		</Description>
+    </EntityComponent>
+	
+   <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>SurvivorCASBehavior</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Strike]
+		  [TargetData:Target-CAS]
+		  [UseProjectileLeadPrediction:true]
+		  [UseTurrets:true]
+		</Description>
+    </EntityComponent>
+  
+  </EntityComponents>
+</Definitions>

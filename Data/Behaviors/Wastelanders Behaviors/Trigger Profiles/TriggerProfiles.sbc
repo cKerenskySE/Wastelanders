@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-Remove-Wastelander-If-Compromised</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:Compromised]
+			
+			[Actions:Action-Remove-Wastelander-If-Compromised-Coutdown]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-Remove-Wastelander-If-Compromised-Countdown</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+
+			[UseTrigger:false]
+			[Type:Timer]
+			[MinCooldownMs:24000]
+			[MaxCooldownMs:36000]
+			[StartsReady:false]
+			[MaxActions:1]
+			[Actions:Action-Remove-Wastelander]
+			</Description>
+        </EntityComponent>
+
+
+<!-- Scout Profile -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-Create-Scout-Spawn</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:PlayerNear]
+			[TargetDistance:150]
+			[Actions:Action-Create-ScoutDrone]
+			[MinCooldownMs:60000]
+			[MaxCooldownMs:120000]
+
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Trigger-Create-Player-Known-Area</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			[StartsReady:true]
+			[UseTrigger:true]
+			[Type:TargetNear]
+			[TargetDistance:150]
+			
+			[Actions:Action-Create-Player-Known-Area]
+
+			</Description>
+        </EntityComponent>
+  </EntityComponents>
+</Definitions>

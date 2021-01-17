@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AdminKeyWASTELAND</SubtypeId>
+      </Id>
+      <DisplayName>Admin Key</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust.dds</Icon>
+      <Prerequisites>
+        <Item Amount="45" TypeId="Ingot" SubtypeId="Iron" />
+		<Item Amount="45" TypeId="Ingot" SubtypeId="Silicon" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="AdminKeyWASTELAND" />
+      <BaseProductionTimeInSeconds>999999</BaseProductionTimeInSeconds>
+    </Blueprint>
+  </Blueprints>
+</Definitions>

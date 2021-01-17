@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Factions>
+	<!--Do Not Edit Above Here-->
+
+		<!--Copy From This Line-->
+		<Faction Tag="EMCORP" Founder="Emallion Corporation AI">
+			<Id>
+				<TypeId>MyObjectBuilder_FactionDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>CorporateId</SubtypeId> <!--Must Be Unique-->
+			</Id>
+			<DisplayName>EmCorp</DisplayName>
+			<IsDefault>true</IsDefault>
+			<DefaultRelation>Enemies</DefaultRelation> <!--Enemies, Neutral, Friends-->
+			<AcceptHumans>false</AcceptHumans>
+			<AutoAcceptMember>false</AutoAcceptMember>
+			<StartingBalance>100000000</StartingBalance>
+			<Type>Miner</Type> <!--None, Miner, Trader, Builder-->
+			<DiscoveredByDefault>true</DiscoveredByDefault>
+			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
+		</Faction>
+		<!--Copy To This Line And Paste Directly Below-->
+		<Faction Tag="WASTELANDERS" Founder="Corporate Rebel Captain">
+			<Id>
+				<TypeId>MyObjectBuilder_FactionDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>WASTELAND</SubtypeId> <!--Must Be Unique-->
+			</Id>
+			<DisplayName>Wasteland Raiders</DisplayName>
+			<IsDefault>true</IsDefault>
+			<DefaultRelation>Enemies</DefaultRelation> <!--Enemies, Neutral, Friends-->
+			<AcceptHumans>false</AcceptHumans>
+			<AutoAcceptMember>false</AutoAcceptMember>
+			<StartingBalance>100000000</StartingBalance>
+			<Type>Trader</Type> <!--None, Miner, Trader, Builder-->
+			<DiscoveredByDefault>true</DiscoveredByDefault>
+			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
+		</Faction>
+		
+			<Faction Tag="SURVIVOR" Founder="Survivors">
+			<Id>
+				<TypeId>MyObjectBuilder_FactionDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>SURVIVORS</SubtypeId> <!--Must Be Unique-->
+			</Id>
+			<DisplayName>Wasteland Survivors</DisplayName>
+			<IsDefault>true</IsDefault>
+			<DefaultRelation>Friends</DefaultRelation> <!--Enemies, Neutral, Friends-->
+			<AcceptHumans>false</AcceptHumans>
+			<AutoAcceptMember>false</AutoAcceptMember>
+			<StartingBalance>100000000</StartingBalance>
+			<Type>Trader</Type> <!--None, Miner, Trader, Builder-->
+			<DiscoveredByDefault>true</DiscoveredByDefault>
+			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
+		</Faction>
+	<!--Do Not Edit Below Here-->
+	</Factions>
+</Definitions>

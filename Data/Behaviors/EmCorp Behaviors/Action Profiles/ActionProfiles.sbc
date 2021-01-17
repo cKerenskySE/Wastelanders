@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+		<!-- Resupply Actions -->
+			<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-Resupply-Corp</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[BroadcastCommandProfiles:true]
+			[CommandProfileIds:EmCorp-Command-Resupply]
+			
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-Resupply-Response</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[AddWaypointFromCommand:true]
+			[SwitchToReceivedTarget:true]
+			
+			</Description>
+        </EntityComponent>
+		<!-- Base Build -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-EMBuildBase</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[BroadcastCommandProfiles:true]
+			[CommandProfileIds:Command-EMBuildBase]
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-Build-Response</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[AddWaypointFromCommand:true]
+			[SwitchToReceivedTarget:true]
+			[EnableTriggers:true]
+			[EnableTriggerNames:Trigger-LeavingWaypointTryBuild]
+			[EnableTriggerNames:Trigger-LeavingWaypointTryBuild-Large]
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-Build-Command-Small</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[BroadcastCommandProfiles:true]
+			[CommandProfileIds:Command-Build-Small]
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-EMBuild-Base-Final</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[BuildProjectedBlocks:true]
+			[MaxProjectedBlocksToBuild:10]
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-Build-Command-Large</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[BroadcastCommandProfiles:true]
+			[CommandProfileIds:Command-Build-Large]
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-EMBuild-Base-Final-Large</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[BuildProjectedBlocks:true]
+			[MaxProjectedBlocksToBuild:35]
+			</Description>
+        </EntityComponent>
+		<!-- Spawn Zones -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-Create-Defense-Drones</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[UseChatBroadcast:true]
+			[ChatData:ChatProfile-Transport-Damage]
+			[SpawnEncounter:true]
+			[SwitchToReceivedTarget:true]
+			[Spawner:Spawn-Defense-Drone]
+			
+			</Description>
+        </EntityComponent>
+		<!-- CreateOutpostArea -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-Create-OutpostArea</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[AddWaypointFromCommand:true]
+			[SwitchToReceivedTarget:true]
+			
+			</Description>
+        </EntityComponent>
+				<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-Spawn-TrySpawnOutpost</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[SpawnEncounter:true]
+			[Spawner:Spawn-Corporate-Outpost-Area]
+			[UseChatBroadcast:true]
+			[ChatData:ChatProfile-Create-Outpost]
+			
+			</Description>
+        </EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-FindOutpost</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[BroadcastCommandProfiles:true]
+			[CommandProfileIds:Command-FindOutpost]
+			[UseChatBroadcast:true]
+			[ChatData:ChatProfile-Outpost-Search]
+			</Description>
+        </EntityComponent>
+		<!-- DamageAttacker -->
+			<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>Action-Damage-Attacker</SubtypeId>
+            </Id>
+            <Description>
+			[RivalAI Action]
+			[DamageToolAttacker:true]
+			[DamageToolAttackerAmount:35]
+			[GridEditable:false]
+			
+			</Description>
+        </EntityComponent>
+		
+  </EntityComponents>
+</Definitions>

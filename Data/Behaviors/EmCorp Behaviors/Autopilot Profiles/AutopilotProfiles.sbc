@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+	<!-- T1 Profiles -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>Autopilot-Ramshackle-Corporate-Drone</SubtypeId>
+			</Id>
+			<Description>
+			[RivalAI Autopilot]      		
+			[IdealPlanetAltitude:250]
+			[AltitudeTolerance:250]
+			[UseVelocityCollisionEvasion:true]
+			[CollisionEvasionResumeDistance:100]
+			[UseProjectileLeadPrediction:true]
+			[StrafeMinCooldownMs:5000]
+			[StrafeMaxCooldownMs:35000]
+			[RotationMultiplier:0.5]
+			</Description>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>Autopilot-Mite-Drone</SubtypeId>
+			</Id>
+			<Description>
+			[RivalAI Autopilot]      		
+			[IdealMinSpeed:75]
+			[IdealMaxSpeed:95]
+			</Description>
+		</EntityComponent>
+	<!-- T2 Profiles -->
+			<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>Autopilot-Mosquito</SubtypeId>
+			</Id>
+			<Description>
+			[RivalAI Autopilot]      		
+			[IdealPlanetAltitude:85]
+			[AltitudeTolerance:250]
+			[UseVelocityCollisionEvasion:true]
+			[CollisionEvasionResumeDistance:120]
+			[UseProjectileLeadPrediction:true]
+			[LevelWithGravityWhenIdle:false]
+			[IdealMinSpeed:75]
+			[IdealMaxSpeed:95]
+			[SlowDownOnWaypointApproach:true]
+			[MaxSpeedTolerance:10]
+			[StrafeMinDurationMs:500]
+			[StrafeMaxDurationMs:751]
+			[AngleAllowedForForwardThrust:5]
+			[StrafeMinCooldownMs:250]
+			[StrafeMaxCooldownMs:750]
+			</Description>
+		</EntityComponent>
+			<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>Autopilot-AssaultDrone</SubtypeId>
+			</Id>
+			<Description>
+			[RivalAI Autopilot]      		
+			[IdealPlanetAltitude:400]
+			[AltitudeTolerance:15]
+			[UseVelocityCollisionEvasion:true]
+			[CollisionEvasionResumeDistance:120]
+			[UseProjectileLeadPrediction:true]
+			[LevelWithGravityWhenIdle:true]
+			[FlyLevelWithGravity:true]
+			[IdealMinSpeed:25]
+			[IdealMaxSpeed:35]
+			[SlowDownOnWaypointApproach:true]
+			[MaxSpeedTolerance:25]
+			</Description>
+		</EntityComponent>
+			<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>Autopilot-Revivifier</SubtypeId>
+			</Id>
+			<Description>
+			[RivalAI Autopilot]      		
+			[IdealPlanetAltitude:400]
+			[AltitudeTolerance:300]
+			[UseVelocityCollisionEvasion:true]
+			[CollisionEvasionResumeDistance:120]
+			[UseProjectileLeadPrediction:true]
+			[LevelWithGravityWhenIdle:true]
+			[FlyLevelWithGravity:true]
+			[IdealMinSpeed:25]
+			[IdealMaxSpeed:35]
+			[SlowDownOnWaypointApproach:true]
+			[MaxSpeedTolerance:25]
+			</Description>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>Autopilot-Passive</SubtypeId>
+			</Id>
+			<Description>
+			[RivalAI Autopilot]      		
+			[IdealPlanetAltitude:200]
+			[AltitudeTolerance:200]
+			[UseVelocityCollisionEvasion:true]
+			[CollisionEvasionResumeDistance:120]
+			[LevelWithGravityWhenIdle:true]
+			[FlyLevelWithGravity:true]
+			
+			</Description>
+		</EntityComponent>
+
+					<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			  <Id>
+				  <TypeId>Inventory</TypeId>
+				  <SubtypeId>Autopilot-ResupplyDrone</SubtypeId>
+			  </Id>
+			  <Description>
+
+				[RivalAI Autopilot]
+
+				[SlowDownOnWaypointApproach:true]
+				[ExtraSlowDownDistance:100]
+				[FlyLevelWithGravity:false]
+
+				[IdealMinSpeed:7]
+				[IdealMaxSpeed:50]
+				[MaxSpeedTolerance:10]
+
+				[MinimumPlanetAltitude:10]
+				[IdealPlanetAltitude:50]
+
+				[WaypointTolerance:50]
+				[WaypointWaitTimeTrigger:60]
+
+
+
+			  </Description>
+			  
+			</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>Autopilot-Pioneer</SubtypeId>
+			</Id>
+			<Description>
+		[RivalAI Autopilot]
+
+				[SlowDownOnWaypointApproach:true]
+				[ExtraSlowDownDistance:100]
+				[FlyLevelWithGravity:true]
+
+				[IdealMinSpeed:7]
+				[IdealMaxSpeed:35]
+				[MaxSpeedTolerance:10]
+
+				[MinimumPlanetAltitude:10]
+				[IdealPlanetAltitude:50]
+
+				[WaypointTolerance:50]
+				[WaypointWaitTimeTrigger:60]
+			</Description>
+		</EntityComponent>
+	</EntityComponents>
+</Definitions>

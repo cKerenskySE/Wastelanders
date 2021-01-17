@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+	<!-- T0 Profiles -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Target-Scav</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Target]
+      [UseCustomTargeting:true]
+	  [TimeUntilNextRefresh:30]
+	  
+      [Target:PlayerAndBlock]
+	  [BlockTargets:Turrets]
+	  [BlockTargets:Guns]
+	  [BlockTargets:Production]
+      
+	[TimeUntilNextEvaluation:10]
+
+      [MaxDistance:5000]
+      
+	  [MatchAllFilters:OutsideOfSafezone]
+      [MatchAllFilters:Relation]
+	  [MatchAllFilters:Owner]
+	  
+	  [MatchAnyFilters:Broadcasting]
+	  [MatchAnyFilters:MovementScore]
+	  [NonBroadcastVisualRange:3500]
+	  [MinMovementScore:1000]
+	  
+      [GetTargetBy:ClosestDistance]
+      [Owners:Player]
+      [Owners:NPC]
+      [Relations:Enemy]
+	  [Relations:Neutral]
+      </Description>
+    </EntityComponent>
+	
+	<!-- T1 Profiles -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Target-Ramshackle-Technical</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Target]
+      [UseCustomTargeting:true]
+	  [TimeUntilNextRefresh:30]
+	  
+      [Target:Block]
+	  [BlockTargets:Turrets]
+	  [BlockTargets:Guns]
+	  [BlockTargets:NanoBots]
+	  [TimeUntilNextEvaluation:10]
+      
+      [MaxDistance:5000]
+      
+      [MatchAllFilters:OutsideOfSafezone]
+      [MatchAllFilters:Relation]
+	  [MatchAllFilters:Owner]
+      [GetTargetBy:ClosestDistance]
+	  
+	  [MatchAnyFilters:Broadcasting]
+	  [MatchAnyFilters:MovementScore]
+	  [NonBroadcastVisualRange:3500]
+	  [MinMovementScore:1000]
+      
+      [Owners:Player]
+      [Owners:NPC]
+      [Relations:Enemy]
+	  [Relations:Neutral]
+      </Description>
+    </EntityComponent>
+<!-- T2 Profiles -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Target-Scout-Defense</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Target]
+      [UseCustomTargeting:true]
+	  [TimeUntilNextRefresh:300]
+	  [Target:PlayerAndGrid]
+      [MaxDistance:15000]
+      [GetTargetBy:ClosestDistance]
+	  [TimeUntilNextEvaluation:10]
+      [Owners:Player]
+      [Owners:NPC]
+
+      
+      </Description>
+    </EntityComponent>	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Target-Scout</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Target]
+      [UseCustomTargeting:true]
+	  [TimeUntilNextRefresh:30]
+	  
+	  [Target:PlayerAndBlock]
+
+	  [BlockTargets:Containers]
+	  [BlockTargets:Turrets]
+	  [BlockTargets:Guns]
+	  [BlockTargets:Production]
+	  [TimeUntilNextEvaluation:10]
+
+      [MaxDistance:15000]
+      
+      [MatchAllFilters:OutsideOfSafezone]
+      [MatchAllFilters:Relation]
+	  [MatchAllFilters:Owner]
+	  
+	  [MatchAnyFilters:Broadcasting]
+	  [MatchAnyFilters:MovementScore]
+	  [NonBroadcastVisualRange:10000]
+	  [MinMovementScore:1000]
+	  
+	  
+      [GetTargetBy:ClosestDistance]
+      [Owners:Player]
+      [Owners:NPC]
+      [Relations:Enemy]
+	  [Relations:Neutral]
+      </Description>
+    </EntityComponent>	
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Target-Raider</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Target]
+      [UseCustomTargeting:true]
+	  [TimeUntilNextRefresh:30]
+	  
+      [Target:PlayerAndBlock]
+	  [BlockTargets:Containers]
+	  [BlockTargets:Turrets]
+	  [BlockTargets:Guns]
+	  [BlockTargets:Production]
+	  [TimeUntilNextEvaluation:10]
+
+      [MaxDistance:5000]
+      
+      [MatchAllFilters:OutsideOfSafezone]
+      [MatchAllFilters:Relation]
+	  [MatchAllFilters:Owner]
+	  
+	  [MatchAnyFilters:Broadcasting]
+	  [MatchAnyFilters:MovementScore]
+	  [NonBroadcastVisualRange:3500]
+	  [MinMovementScore:1000]
+	  
+      [GetTargetBy:ClosestDistance]
+      [Owners:Player]
+      [Owners:NPC]
+      [Relations:Enemy]
+	  [Relations:Neutral]
+      </Description>
+    </EntityComponent>	
+	
+
+  </EntityComponents>
+</Definitions>

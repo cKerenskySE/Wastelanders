@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Spawn-Defense-Drone</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      [SpawningType:PlanetaryCargoShip]
+      [StartsReady:true]
+      [MaxSpawns:3]
+	  [SpawnGroups:CorporateAssaultDrone]
+	  [SpawnGroups:CorporateRamshackleDroneGatResponse]
+	  [SpawnGroups:CorporateRamshackleDroneGatResponse]
+      [IgnoreSafetyChecks:true]
+      
+      </Description>
+      
+    </EntityComponent>
+	
+	    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Spawn-Corporate-Outpost-Area</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      [UseSpawn:true]
+      [SpawningType:PlanetaryInstallation]
+      [StartsReady:true]
+      [MaxSpawns:1]
+	  [SpawnGroups:ConstructedOutpostBuild]
+	  [IgnoreSafetyChecks:true]
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

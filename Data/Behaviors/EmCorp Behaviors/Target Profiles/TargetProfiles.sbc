@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+	<!-- T1 Profiles -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Target-Ramshackle-Corporate-Drone</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Target]
+      [UseCustomTargeting:true]
+	  [TimeUntilNextRefresh:75]
+	  [TimeUntilNextEvaluation:10]
+	  [UseTargetRefresh:true]
+      [Target:Grid]
+      
+      [MaxDistance:10000]
+	  
+      
+      [MatchAllFilters:OutsideOfSafezone]
+      [MatchAllFilters:Relation]
+	  [MatchAllFilters:Owner]
+	  
+	  [MatchAnyFilters:Broadcasting]
+	  [MatchAnyFilters:LineOfSight]
+	  
+      [GetTargetBy:ClosestDistance]
+	  [NonBroadcastVisualRange:2500]
+	  [MinTargetValue:15]
+	  [MaxTargetValue:120]
+	  [MaxLineOfSight:4000]
+      
+      [Owners:Player]
+      [Owners:NPC]
+      [Relations:Enemy]
+	  [Relations:Neutral]
+      </Description>
+    </EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		<TypeId>Inventory</TypeId>
+		<SubtypeId>Target-Mite-Drone</SubtypeId>
+		</Id>
+		<Description>
+
+			[RivalAI Target]
+			[UseTargetRefresh:true]
+			[UseCustomTargeting:true]
+			[Target:Grid]
+			[TimeUntilNextEvaluation:60]
+			[MaxDistance:4000]
+
+			[MatchAllFilters:OutsideOfSafezone]
+			[MatchAllFilters:Relation]
+			[MatchAllFilters:Owner]
+			[MatchAnyFilters:Broadcasting]
+			[MatchAnyFilters:LineOfSight]
+			[MaxLineOfSight:1000]
+
+
+			[Owners:Player]
+			[Owners:NPC]
+			[Relations:Enemy]
+			[Relations:Neutral]
+			[GetTargetBy:ClosestDistance]
+
+		</Description>
+	</EntityComponent>
+	
+<!-- T2 Profiles -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Target-Mosquito</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Target]
+      [UseCustomTargeting:true]
+	  [TimeUntilNextRefresh:30]
+	  [UseTargetRefresh:true]
+      [Target:PlayerAndBlock]
+	  [BlockTargets:Propulsion]
+	  [BlockTargets:Turrets]
+	  [BlockTargets:Guns]
+	  [BlockTargets:Production]
+
+      [MaxDistance:5000]
+	  	  
+      [MatchAllFilters:OutsideOfSafezone]
+      [MatchAllFilters:Relation]
+	  [MatchAllFilters:Owner]
+	  [MatchAllFilters:Speed]
+
+	  
+	  [MinMovementScore:500]
+	  [MaxMovementDetectableDistance:5000]
+      [GetTargetBy:ClosestDistance]
+      [Owners:Player]
+      [Owners:NPC]
+      [Relations:Enemy]
+	  [Relations:Neutral]
+      </Description>
+    </EntityComponent>	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Target-AssaultDrone</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Target]
+      [UseCustomTargeting:true]
+	  [UseTargetRefresh:true]
+	  [TimeUntilNextRefresh:30]
+	  
+      [Target:PlayerAndBlock]
+	  [BlockTargets:Turrets]
+	  [BlockTargets:Guns]
+	  [BlockTargets:Tools]
+	  [BlockTargets:NanoBots]
+
+      [MaxDistance:5000]
+      
+      [MatchAllFilters:OutsideOfSafezone]
+      [MatchAllFilters:Relation]
+	  [MatchAllFilters:Owner]
+		[MatchAnyFilters:Broadcasting]
+		[MatchAnyFilters:LineOfSight]
+	  [MaxLineOfSight:1000]
+	  
+      [GetTargetBy:ClosestDistance]
+      [Owners:Player]
+      [Owners:NPC]
+      [Relations:Enemy]
+	  [Relations:Neutral]
+      </Description>
+    </EntityComponent>	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Target-Revivifier</SubtypeId>
+      </Id>
+      <Description>
+
+		[RivalAI Target]
+		[UseCustomTargeting:true]
+		[Target:Grid]
+		[UseTargetRefresh:true]
+	  [TimeUntilNextRefresh:30]
+	  [TimeUntilNextEvaluation:10]
+		[MaxDistance:5000]
+		
+		  [MatchAllFilters:OutsideOfSafezone]
+		  [MatchAnyFilters:Relation]
+		  [MatchAnyFilters:Owner]
+		  	[MatchAnyFilters:Broadcasting]
+			[MatchAnyFilters:LineOfSight]
+	  	  [MaxLineOfSight:1000]
+
+		[Owners:Player]
+		[Owners:NPC]
+		[Relations:Enemy]
+		[Relations:Neutral]
+		[GetTargetBy:ClosestDistance]
+      </Description>
+    </EntityComponent>	
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Target-Resupply</SubtypeId>
+      </Id>
+      <Description>
+
+		[RivalAI Target]
+		[UseCustomTargeting:true]
+		[Target:Grid]
+	    [TimeUntilNextRefresh:30]
+		[TimeUntilNextEvaluation:10]
+		[MaxDistance:3500]
+		[MatchAllFilters:OutsideOfSafezone]
+		[MatchAllFilters:Relation]
+		[MatchAllFilters:Speed]
+		[MinSpeed:10]
+		[MaxSpeed:150]
+		[Relations:Faction]
+		[GetTargetBy:ClosestDistance]
+      </Description>
+    </EntityComponent>	
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Target-OutpostNearEnemy</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Target]
+      [UseCustomTargeting:true]
+	  [UseTargetRefresh:true]
+	  [TimeUntilNextRefresh:30]
+      [Target:Grid]
+      [MaxDistance:3500]
+      [MatchAllFilters:OutsideOfSafezone]
+      [MatchAnyFilters:Relation]
+	  [MatchAllFilters:Owner]
+	  [MatchAllFilters:Static]
+      [GetTargetBy:ClosestDistance]
+      [Owners:Player]
+      [Owners:NPC]
+      [Relations:Enemy]
+	  [Relations:Neutral]
+      </Description>
+    </EntityComponent>	
+
+  </EntityComponents>
+</Definitions>

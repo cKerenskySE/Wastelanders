@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+	<!-- T0 Profiles -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>Action-CargoTransfer</SubtypeId>
+			</Id>
+			<Description>
+			[RivalAI Autopilot]      		
+			[UseVelocityCollisionEvasion:true]
+			[FlyLevelWithGravity:true]
+			[RotationMultiplier:0.5]
+			</Description>
+		</EntityComponent>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>Action-Scav</SubtypeId>
+			</Id>
+			<Description>
+			[RivalAI Autopilot]      		
+			[UseVelocityCollisionEvasion:true]
+			[StrikeEngageUseCollisionEvasion:true]
+			[StrikeEngageUseSafePlanetPathing:true]
+			[RotationMultiplier:0.5]
+			
+			</Description>
+		</EntityComponent>
+
+	</EntityComponents>
+</Definitions>

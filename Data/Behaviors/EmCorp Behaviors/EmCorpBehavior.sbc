@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  <!-- T0 Challenges -->
+   <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>HydrogenRefuelDronePassive</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Passive]
+		  [TargetData:RAI-Target-Common]
+		</Description>
+    </EntityComponent>
+	 <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>MiteDroneBehavior</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Fighter]
+		  [TargetData:Target-Mite-Drone]
+		  [AutopilotData:Autopilot-Mite-Drone]
+		</Description>
+    </EntityComponent>
+  <!-- T1 Challenges -->
+	 <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>RamshackleCorporateDrone</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Fighter]
+		  
+		  [FighterEngageDistancePlanet:100]
+		  [FighterDisengageDistancePlanet:250]
+		  
+		  [AutopilotData:Autopilot-Ramshackle-Corporate-Drone]
+		  
+		  [WeaponMaxAngleFromTarget:2]
+		  [MaxStaticWeaponRange:400]
+		  [UseBarrageFire:true]
+		  [AmmoReplenishClipAmount:10]
+		  [MaxAmmoReplenishments:15]
+		  
+		  [UseNoTargetTimer:true]
+		  [NoTargetTimerTrigger:35000]
+		  [TargetData:Target-Ramshackle-Corporate-Drone]
+		  
+		</Description>
+    </EntityComponent>
+
+   <!-- T2 Challenges -->
+   <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>MosquitoHunter</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Fighter]
+		  [AutopilotData:Autopilot-Mosquito]
+		  [FighterEngageDistancePlanet:25]
+		  [FighterDisengageDistancePlanet:250]
+		  
+		  [TargetData:Target-Mosquito]
+		</Description>
+    </EntityComponent>
+	<!-- T3 Encounter -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>AssaultDrone</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Horsefly]
+		  [AutopilotData:Autopilot-AssaultDrone]
+		  [TargetData:Target-AssaultDrone]
+		  [UseNoTargetTimer:true]
+		  [UseTurrets:true]
+		</Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>RevivifierBehavior</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Horsefly]
+		  [AutopilotData:Autopilot-Revivifier]
+		  [TargetData:Target-Revivifier]
+		  [UseNoTargetTimer:true]
+		  [UseTurrets:true]
+		</Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>PioneerDroneBehavior</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:CargoShip]
+		  [AutopilotData:Autopilot-Pioneer]
+		  [TargetData:Target-Mite-Drone]
+		  [Triggers:Trigger-Create-OutpostArea]
+		  [Triggers:Trigger-TrySpawnOutpost]
+		  [Triggers:Trigger-FindOutpost]
+
+		  
+		</Description>
+    </EntityComponent>
+	
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>OreExtractorDefense</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Passive]
+		  [TargetData:RivalAI-GenericTargetProfile-EnemyOverride]
+		  [UseDamageDetection:true]
+		  [Triggers:Trigger-Create-Ore-Help]
+		  [Triggers:Trigger-Create-Ore-DamageAttacker]
+		  [Triggers:Trigger-FoundTargetForResupply]
+
+		 
+		</Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>EMCorpResupplyDepot</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Passive]
+		  [TargetData:Target-Resupply]
+		  [Triggers:Trigger-FoundTargetForResupply]
+		 
+		</Description>
+    </EntityComponent>
+	
+	   <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>CorporateTransporterBehavior</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:CargoShip]
+		  [AutopilotData:Autopilot-ResupplyDrone]
+		  [TargetData:Target-Resupply]
+		  [Triggers:Trigger-GetResupplyCommands]
+		  [Triggers:Trigger-GetBuildCommand]
+		  [Triggers:Trigger-LeavingWaypointTryBuild]
+		</Description>
+    </EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>CorporateBigBuilderBehavior</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:CargoShip]
+		  [AutopilotData:Autopilot-ResupplyDrone]
+		  [TargetData:Target-Resupply]
+		  [Triggers:Trigger-GetResupplyCommands]
+		  [Triggers:Trigger-GetBuildCommand]
+		  [Triggers:Trigger-LeavingWaypointTryBuild-Large]
+		</Description>
+    </EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>EMCorpPrefabBaseBuild</SubtypeId>
+		</Id>
+		<Description>
+		  [RivalAI Behavior]
+		  [BehaviorName:Passive]
+		  [AutopilotData:Autopilot-ResupplyDrone]
+		  [TargetData:Target-Resupply]
+		  [Triggers:Trigger-EMBuildBase]
+		  [Triggers:Trigger-BuildSmall]
+		  [Triggers:Trigger-BuildLarge]
+		</Description>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>
