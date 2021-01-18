@@ -146,7 +146,7 @@
 				<SubtypeId>Autopilot-Pioneer</SubtypeId>
 			</Id>
 			<Description>
-		[RivalAI Autopilot]
+			[RivalAI Autopilot]
 
 				[SlowDownOnWaypointApproach:true]
 				[ExtraSlowDownDistance:100]
